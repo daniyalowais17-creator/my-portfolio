@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My PortFolio</title>
+<meta name="description" content="Daniyal Abbasi — Data Analyst turning raw data into actionable insight with Python, SQL and Power BI.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="scroll-progress"><div class="scroll-progress__bar" id="scrollBar"></div></div>
+
+<!-- background grid -->
+<div class="grid-bg" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#intro" class="nav__logo">Daniyal<span class="dot">.</span></a>
+
+  <nav class="nav__links" id="navLinks">
+    <a href="#intro" class="nav__link" data-nav>Intro</a>
+    <a href="#skills" class="nav__link" data-nav>Skills</a>
+    <a href="#work" class="nav__link" data-nav>Work</a>
+    <a href="#projects" class="nav__link" data-nav>Projects</a>
+    <a href="#contact" class="nav__link" data-nav>Contact</a>
+  </nav>
+
+  <a href="#contact" class="nav__cta">Let's talk</a>
+
+  <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ INTRO ============ -->
+  <section class="section hero" id="intro">
+    <div class="hero__inner">
+
+      <div class="hero__text" data-reveal>
+        <p class="eyebrow">Data Analyst · Karachi</p>
+        <h1 class="hero__title">
+          I turn raw <span class="text-accent">data</span><br>
+          into clear <span class="text-outline">decisions.</span>
+        </h1>
+        <p class="hero__sub">
+          Hey, I'm Daniyal. Somewhere between a reporting job
+          and way too many messy spreadsheets, I figured out what I actually enjoy
+          taking a pile of numbers nobody wants to look at and turning it into something
+          a manager can act on in five minutes. Excel got me started, Power BI is where
+          I live most days, and Python handles the parts I got tired of doing by hand.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">
+            <span>Start a project</span>
+          </a>
+          <a href="#work" class="btn btn--ghost">
+            <span>See my experience</span>
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num" data-count="5">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">roles across analytics &amp; compliance</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="3">0</span>
+            <span class="stat__label">tools I reach for daily — Excel, Power BI, Python</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="2028">0</span>
+            <span class="stat__label">graduating with my BBA, Virtual University</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-reveal>
+        <div class="photo-cutout" id="tiltCard">
+          <div class="photo-glow" aria-hidden="true"></div>
+
+          <!-- Swap this placeholder for a transparent PNG cutout of your photo -->
+           <img src="image/image.png" alt="My Image" class="photo-cutout__img">
+          <!-- <img src="image/profile.png" alt="Daniyal Abbasi" class="photo-cutout__img"> -->
+
+          <div class="floating-badge floating-badge--top">KPI Trackers</div>
+          <div class="floating-badge floating-badge--bottom">Python · Automation</div>
+        </div>
+
+        <!-- signature console animation -->
+        <div class="console" id="console">
+          <div class="console__bar">
+            <span class="console__dot"></span><span class="console__dot"></span><span class="console__dot"></span>
+            <span class="console__title">query.sql</span>
+          </div>
+          <div class="console__body" id="consoleBody"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#skills" class="scroll-cue" aria-label="Scroll down">
+      <span>Scroll</span>
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none"><rect x="1" y="1" width="12" height="20" rx="6" stroke="currentColor" stroke-width="1.2"/><circle class="scroll-cue__wheel" cx="7" cy="7" r="1.6" fill="currentColor"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">Toolkit</p>
+      <h2 class="section__title">What I work with, daily.</h2>
+      <p class="section__desc">Comfortable moving between the spreadsheet, the query editor and the dashboard end to end.</p>
+    </div>
+
+    <div class="skills-grid" data-reveal-group>
+
+      <article class="skill-card" data-tilt>
+        <span class="skill-card__tag">01</span>
+        <h3>Python</h3>
+        <p>Cleaning, automating and analysing data from one‑off scripts to repeatable pipelines.</p>
+        <div class="skill-card__bar"><span style="--w:88%"></span></div>
+      </article>
+
+      <article class="skill-card" data-tilt>
+        <span class="skill-card__tag">02</span>
+        <h3>Problem Solving</h3>
+        <p>Half of my job is sitting with The Team to Solve Their Bussiness Problem.</p>
+        <div class="skill-card__bar"><span style="--w:86%"></span></div>
+      </article>
+
+      <article class="skill-card" data-tilt>
+        <span class="skill-card__tag">03</span>
+        <h3>Power BI</h3>
+        <p>Turning tables into dashboards and KPI trackers that people actually open twice.</p>
+        <div class="skill-card__bar"><span style="--w:90%"></span></div>
+      </article>
+
+      <article class="skill-card" data-tilt>
+        <span class="skill-card__tag">04</span>
+        <h3>Excel &amp; VBA</h3>
+        <p>Automating the repetitive reporting work so it stops eating the working day.</p>
+        <div class="skill-card__bar"><span style="--w:85%"></span></div>
+      </article>
+
+      <article class="skill-card" data-tilt>
+        <span class="skill-card__tag">05</span>
+        <h3>Statistical Analysis</h3>
+        <p>Reading patterns in the data and separating what's a trend from what's just noise.</p>
+        <div class="skill-card__bar"><span style="--w:78%"></span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ WORK / EXPERIENCE ============ -->
+  <section class="section" id="work">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">Work Experience</p>
+      <h2 class="section__title">Where I've learned it.</h2>
+      <p class="section__desc">A quick walk through the roles that got me here.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__date">Apr 2026 — Present</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__badge">Current</span>
+          <h3>Data Analyst</h3>
+          <p class="timeline__company">Appedology Pvt. Ltd.</p>
+          <ul>
+            <li>Turning raw data into clear insight using Excel &amp; Power BI</li>
+            <li>Building dashboards &amp; KPI trackers that make data easy to understand</li>
+            <li>Automating repetitive tasks with Python &amp; VBA</li>
+            <li>Helping teams make smarter, data‑driven decisions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__date">Jun 2025 — Mar 2026</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <h3>Reporting Analyst</h3>
+          <p class="timeline__company">Expert BOS · Karachi</p>
+          <ul>
+            <li>Turned data into actionable insight across reporting cycles</li>
+            <li>Skilled in Excel &amp; BI‑driven reporting</li>
+            <li>Always looking to dig deeper and drive business growth</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__date">May 2025 — Jun 2025</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <h3>Business Analyst</h3>
+          <p class="timeline__company">Hot‑N‑Spicy</p>
+          <ul>
+            <li>Turned data into insight that fed directly into business decisions</li>
+            <li>Built Power BI &amp; Excel views for the team</li>
+            <li>Focused on data visualization and process improvement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__date">Nov 2024 — Mar 2025</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <h3>KYC Associate</h3>
+          <p class="timeline__company">TPL Insurance</p>
+          <ul>
+            <li>Verified customer identities against documents and data</li>
+            <li>Helped mitigate risk and keep the organisation safe from financial crime</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__date">Apr 2023 — Oct 2024</div>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <h3>Data Entry</h3>
+          <p class="timeline__company">DXN Limited</p>
+          <ul>
+            <li>Where the attention to detail that everything above relies on started</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="education" data-reveal>
+      <div class="education__item">
+        <span class="mono">2025 — 2028</span>
+        <p><strong>BBA</strong>, Business Administration Virtual University of Pakistan</p>
+      </div>
+      <div class="education__item">
+        <span class="mono">2024 — 2025</span>
+        <p><strong>HND, Data Science</strong> Computer Collegiates</p>
+      </div>
+      <div class="education__item">
+        <span class="mono">2022 — 2024</span>
+        <p><strong>ICS, Computer Science</strong> Superior College</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__head" data-reveal>
+      <p class="eyebrow">Projects</p>
+      <h2 class="section__title">Done, and still doing.</h2>
+      <p class="section__desc">Here's What's Snippted and what's still on the workbench.</p>
+    </div>
+
+    <div class="projects-grid" data-reveal-group>
+      <article class="project-card" data-tilt>
+        <span class="project-card__pulse project-card__pulse--live"></span>
+        <h3>Bill submission automation-py</h3>
+        <p>I worked on an automation solution to reduce repetitive manual work and make an existing process more simple, consistent, and efficient.</p>
+        <a class="project-card__status" href="https://bill-submission-automation-v1.streamlit.app/" target="_blank" rel="noopener">View it live ↗</a>
+      </article>
+
+      <article class="project-card project-card--empty" data-tilt>
+        <span class="project-card__pulse"></span>
+        <h3>Reporting dashboard case study</h3>
+        <p>A walkthrough of a Power BI KPI tracker, raw export to executive view.</p>
+        <span class="project-card__status">In progress</span>
+      </article>
+
+      <article class="project-card project-card--empty" data-tilt>
+        <span class="project-card__pulse"></span>
+        <h3>SQL deep‑dive</h3>
+        <p>A messy dataset, a set of queries, and the story they told.</p>
+        <span class="project-card__status">Coming soon</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="contact__inner" data-reveal>
+      <p class="eyebrow">Let's Connect</p>
+      <h2 class="contact__title">Got numbers that need<br>a clearer story?</h2>
+      <p class="contact__sub">Send me a message. Would Love to Solve Your Bussiness Problems</p>
+
+      <button class="contact__email" id="emailCopy" data-email="daniyalowais17@gmail.com">
+        <span id="emailText">daniyalowais17@gmail.com</span>
+        <span class="contact__email-hint" id="emailHint">hit copy</span>
+      </button>
+
+      <div class="contact__links">
+        <a href="https://www.linkedin.com/in/daniyalowais-" target="_blank" rel="noopener" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:daniyalowais17@gmail.com" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <p class="contact__sign">— Daniyal</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Daniyal Owais-Built with data, coffee and a little curiosity.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
